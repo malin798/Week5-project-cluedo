@@ -5,30 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
     <title>Technigo Project Cluedo</title>
   </head>
   <body>
+
+    <h1>Cl<span class="red">u</span>edo</h1>
+
+    <h2>Welcome Detective! 🕵️ Click the cards below to reveal the murderer</h2>
     <section class="cards">
+
       <article class="killer-deck" id="killerCard">
-        <p>KILLER</p>
+
+          <p class="card-title">
+            <img src="assets/header-image.png" width= 80px></img>
+            KILLER
+            <img src="assets/header-image-down.png" width= 80px></img>
+          </p>
+      
         <p id="killerName"></p>
         <p id="killerAge"></p>
         <p id="killerOccupation"></p>
-        <img id="killerImage" src="" height="100" />
+        <img id="killerImage" src="" height="270"/>
         <p id="killerDescription"></p>
+
       </article>
+
       <article class="weapon-deck" id="weaponCard">
-        <p>WEAPON</p>
+
+        <p class="card-title">
+          <img src="assets/header-image.png" width= 80px></img>
+          WEAPON
+          <img src="assets/header-image-down.png" width= 80px></img>
+        </p>
+
         <p id="weaponName"></p>
         <p id="weaponWeight"></p>
+        <img id="weaponImage" src="" height="290"/>
+
       </article>
+
       <article class="room-deck" id="roomCard">
-        <p>ROOM</p>
+
+        <p class="card-title">
+          <img src="assets/header-image.png" width= 80px></img>
+          ROOM
+          <img src="assets/header-image-down.png" width= 80px></img>
+        </p>
+
         <p id="roomName"></p>
+        <p id="roomLocation"></p>
+        <img id="roomImage" src="" height="290"/>
+
       </article>
+
     </section>
 
-    <h1 id="mystery"></h1>
+    <h2 class="mystery-reveal" id="mystery"></h2>
 
     <button id="revealCrime">REVEAL THE CRIME</button>
 
