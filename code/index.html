@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script><script>confetti.start()</script>
+    
     <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
     <title>Technigo Project Cluedo</title>
@@ -64,8 +67,9 @@
 
     <h2 class="mystery-reveal" id="mystery"></h2>
 
-    <button id="revealCrime">REVEAL THE CRIME</button>
+    <button id="revealCrime" onclick=startConfetti()>
+    REVEAL THE CRIME</button>
 
-    <script src="clue.js"></script>
+  <script src="clue.js"></script>
   </body>
 </html>

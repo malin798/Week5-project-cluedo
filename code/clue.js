@@ -169,7 +169,8 @@ const revealMystery = () => {
   pickKiller()
   pickWeapon()
   pickRoom()
-  document.getElementById("revealCrime").innerHTML = `Mystery solved &#127881;`
+  confetti.start(3000)
+  document.getElementById("revealCrime").innerHTML = `MYSTERY SOLVED &#127881;`
   document.getElementById("mystery").innerHTML = 
   (`Great job on solving the mystery, Detective! I never would have imagined it was 
   ${mystery.killer.firstName} ${mystery.killer.lastName} (also known as ${mystery.killer.suspect}) who commited the awful crime! 
@@ -181,3 +182,5 @@ document.getElementById("revealCrime").onclick = revealMystery;
 document.getElementById("killerCard").onclick = pickKiller;
 document.getElementById("weaponCard").onclick = pickWeapon;
 document.getElementById("roomCard").onclick = pickRoom;
+
+
