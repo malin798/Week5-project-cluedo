@@ -54,6 +54,7 @@ p {
   height: 600px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   box-shadow: 0px 0px 8px -2px black;
   perspective: 1000px;
@@ -63,7 +64,6 @@ p {
   width: 250px;
   height: 400px;
   text-align: center;
-  padding-top: 15px;
   border-radius: 16px;
 }
 
@@ -133,4 +133,35 @@ a:hover {
 .card-back {
   background-color: dodgerblue;
   transform: rotateY(180deg);
+}
+
+@media (min-width: 668px) and (max-width: 1024px) {
+
+  .cards {
+    height: 1000px;
+  }
+
+  .mystery-reveal-box {
+    width: 80%;
+    font-size: 25px;
+    padding: 50px 30px;
+  }
+}
+
+@media (max-width: 667px) {
+  h2 {
+    width: 90%;
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+
+  .cards {
+    height: 1500px;
+  }
+
+  .mystery-reveal-box {
+    font-size: 20px;
+    width: 90%;
+    padding: 30px 20px;
+  }
 }
