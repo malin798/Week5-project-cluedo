@@ -49,7 +49,7 @@ const suspects = [
   firstName: 'Michael',
   lastName: 'Mustard',
   gender: "He",
-  color: 'Mustard',
+  color: '#e1ad01',
   description: 'a military man, dignified and dangerous',
   age: 70,
   image: 'assets/mustard.png',
@@ -153,76 +153,94 @@ const randomSelector = array => {
  return array[Math.floor(Math.random() * array.length)]
 }
 
-const mysteryObject = [
-  mystery.killer = randomSelector(suspects),
-  mystery.weapon = randomSelector(weapons),
-  mystery.room = randomSelector(rooms),
-]
+let killer;
+let room;
+let weapon;
 
 //Functions
-const pickKiller = () => {
-  const killerImage = document.getElementById("killerImage");
+const showKiller = () => {
 
-  killerImage.src = mystery.killer.image;
+  const killerImage = document.getElementById("killer-image");
+
+  killerImage.src = killer.image;
   killerImage.classList.add("reveal-styling");
 
-  document.getElementById('killerCard').style.background = mystery.killer.color;
-  document.getElementById("killerAge").innerHTML = `Age: ${mystery.killer.age}`;
-  document.getElementById("killerOccupation").innerHTML = `Occupation: ${mystery.killer.occupation}`;
-  document.getElementById('killerName').innerHTML = `${mystery.killer.firstName} ${mystery.killer.lastName}`;
+  document.getElementById("killerCard").classList.add("flip-cards");
+  document.getElementById('killerCardBack').style.background = killer.color;
+  document.getElementById("killerAge").innerHTML = `Age: ${killer.age}`;
+  document.getElementById("killerOccupation").innerHTML = `Occupation: ${killer.occupation}`;
+  document.getElementById('killerName').innerHTML = `${killer.firstName} ${killer.lastName}`;
 
-  if (mystery.killer.suspect === "Mrs White") {
-    document.getElementById("killerCard").classList.add("borderedChildren");
+  if (killer.suspect === "Mrs White") {
+    document.getElementById("killerCardBack").classList.add("bordered");
+  }
+
+  else {
+    document.getElementById("killerCardBack").classList.remove("bordered");
   }
 }
 
-const pickWeapon = () => {
+const showWeapon = () => {
   const weaponImage = document.getElementById("weaponImage");
 
-  weaponImage.src = mystery.weapon.image;
+  weaponImage.src = weapon.image;
   weaponImage.classList.add("reveal-styling");
 
-  document.getElementById("weaponCard").style.background = mystery.weapon.color;
-  document.getElementById("weaponWeight").innerHTML = `Weight: ${mystery.weapon.weight}`;
-  document.getElementById('weaponName').innerHTML = `${mystery.weapon.name}`;
+  document.getElementById("weaponCard").classList.add("flip-cards");
+  document.getElementById("weaponCardBack").style.background = weapon.color;
+  document.getElementById("weaponWeight").innerHTML = `Weight: ${weapon.weight}`;
+  document.getElementById('weaponName').innerHTML = `${weapon.name}`;
 }
 
-const pickRoom = () => {
+const showRoom = () => {
   const roomImage = document.getElementById("roomImage");
-  
-  roomImage.src = mystery.room.image;
-  roomImage.classList.add("reveal-styling");
 
-  document.getElementById("roomCard").style.background = mystery.room.color;
-  document.getElementById("roomLocation").innerHTML = `Location: ${mystery.room.location}`;
-  document.getElementById('roomName').innerHTML = `${mystery.room.name}`;
+  roomImage.src = room.image;
+  roomImage.classList.add("reveal-styling");
+  
+  document.getElementById("roomCard").classList.add("flip-cards");
+  document.getElementById("roomCardBack").style.background = room.color;
+  document.getElementById("roomLocation").innerHTML = `Location: ${room.location}`;
+  document.getElementById('roomName').innerHTML = `${room.name}`;
 }
 
 const revealMystery = () => {
-  pickKiller()
-  pickWeapon()
-  pickRoom()
-  confetti.start(3000)
+  mysteryRevealText = document.getElementById("mysteryReveal");
 
-  let MyCards = document.getElementsByClassName("card-inner")
-    for (i = 0; i < MyCards.length; i++) {
-    MyCards[i].classList.add("flip-cards");
+  if (killer === undefined || weapon === undefined || room === undefined) {
+    mysteryRevealText.innerHTML = `Please pick your cards to reveal the mystery!`
   }
 
-  const mystery = document.getElementById("mystery");
+  else {
+    confetti.start(3000)
 
-  document.getElementById("revealCrime").innerHTML = `MYSTERY SOLVED &#127881;`
-  mystery.classList.add("mystery-reveal-box")
-  mystery.innerHTML = (`Great job on solving the mystery, Detective! I never would have imagined it was 
-    ${mystery.killer.firstName} ${mystery.killer.lastName} (also known as ${mystery.killer.suspect}) who commited the awful crime! 
-    ${mystery.killer.gender} used the 
-    ${mystery.weapon.name.toLowerCase()} to murder the victim in the ${mystery.room.name.toLowerCase()}!`)
+    document.getElementById("revealCrime").innerHTML = `MYSTERY SOLVED &#127881;`;
+    mysteryRevealText.classList.add("mystery-reveal-box");
+    mysteryRevealText.innerHTML = (`Great job on solving the mystery, Detective! I never would have imagined it was 
+      ${killer.firstName} ${killer.lastName} (also known as ${killer.suspect}) who commited the awful crime! 
+      ${killer.gender} used the 
+      ${weapon.name.toLowerCase()} to murder the victim in the ${room.name.toLowerCase()}!`)
+  }
 }
 
 //Invoke functions
-document.getElementById("revealCrime").onclick = revealMystery;
-document.getElementById("killerCard").onmouseover = pickKiller;
-document.getElementById("weaponCard").onmouseover = pickWeapon;
-document.getElementById("roomCard").onmouseover = pickRoom;
+document.getElementById("revealCrime").addEventListener("click", function() { 
+  revealMystery(); 
+})
+
+document.getElementById("killerCard").addEventListener("click", function () {
+  killer = randomSelector(suspects);
+  showKiller();
+}) 
+
+document.getElementById("roomCard").addEventListener("click", function() {
+  room = randomSelector(rooms);
+  showRoom();
+})
+
+document.getElementById("weaponCard").addEventListener("click", function() {
+  weapon = randomSelector(weapons);
+  showWeapon();
+})
 
 

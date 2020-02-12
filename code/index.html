@@ -14,34 +14,35 @@
   </head>
   <body>
 
-    <h1>Cl<span class="red">u</span>edo</h1>
+    <h1>Cl<span class="red-letter">u</span>edo</h1>
 
-    <h2>Welcome Detective! 🕵️ Hover the cards below to reveal the mystery! </h2>
+    <h2>Welcome Detective! 🕵️ Click the cards below to pick the killer, weapon and room. When you are happy with your choice,
+      click the button "reveal the crime"! </h2>
     <section class="cards">
 
-      <article class="killer-deck card-flip">
-        <div class="card-inner">
+      <article class="deck rotate-card">
+        <div class="card-inner" id="killerCard">
 
           <div class="card-front">
             <p class="card-title"  id="killerTitle"><img src="assets/header-image.png" width= 80px></img>KILLER</p>
           </div>
 
-          <div class="card-back" id="killerCard" >
+          <div class="card-back" id="killerCardBack">
             <p class="card-title" id="killerTitle"><img src="assets/header-image.png" width= 80px></img>KILLER</p>
             <p id="killerName"></p>
             <p id="killerAge"></p>
             <p id="killerOccupation"></p>
-            <img id="killerImage" src="" height="265"/>
+            <img id="killer-image" src="" height="265"/>
           </div>
         </div>
       </article>
 
-      <article class="weapon-deck card-flip">
-        <div class="card-inner">
+      <article class="deck rotate-card">
+        <div class="card-inner" id="weaponCard">
           <div class="card-front">
             <p class="card-title"><img src="assets/header-image.png" width= 80px></img>WEAPON</p>
           </div>
-          <div class="card-back" id="weaponCard">
+          <div class="card-back" id="weaponCardBack">
             <p class="card-title"><img src="assets/header-image.png" width= 80px></img>WEAPON</p>
             <p id="weaponName"></p>
             <p id="weaponWeight"></p>
@@ -50,12 +51,12 @@
         </div>
       </article>
 
-      <article class="room-deck card-flip">
-        <div class="card-inner">
+      <article class="deck rotate-card">
+        <div class="card-inner" id="roomCard">
           <div class="card-front">
             <p class="card-title"><img src="assets/header-image.png" width= 80px></img>ROOM</p>
           </div>
-          <div class="card-back" id="roomCard">
+          <div class="card-back" id="roomCardBack">
             <p class="card-title"><img src="assets/header-image.png" width= 80px></img>ROOM</p>
             <p id="roomName"></p>
             <p id="roomLocation"></p>
@@ -66,11 +67,8 @@
 
     </section>
 
-    <h2 id="mystery"></h2>
-    <a href="#mystery">
-      <button id="revealCrime" onclick=startConfetti()>
-      REVEAL THE CRIME</button>
-     </a>
+    <h2 id="mysteryReveal"></h2>
+    <a href="#mysteryReveal" id="revealCrime"> REVEAL THE CRIME </a>
 
   <script src="clue.js"></script>
   </body>

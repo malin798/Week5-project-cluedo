@@ -14,6 +14,11 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  width: 60%;
+  text-align: center;
+}
+
 p {
   overflow: hidden;
   margin: 1px;
@@ -21,16 +26,11 @@ p {
   background-color: #fff;
 }
 
-.borderedChildren > p {
+.bordered > p {
   border-bottom: solid lightgray 1px;
 }
 
-a {
-  text-decoration: none;
-  outline: none;
-}
-
-.red {
+.red-letter {
   color: red;
   }
 
@@ -57,17 +57,9 @@ a {
   align-items: center;
   box-shadow: 0px 0px 8px -2px black;
   perspective: 1000px;
-  perspective: 1000px;
 }
 
-.killer-deck {
-  width: 250px;
-  height: 400px;
-  text-align: center;
-  border-radius: 16px;
-}
-
-.weapon-deck {
+.deck {
   width: 250px;
   height: 400px;
   text-align: center;
@@ -75,26 +67,19 @@ a {
   border-radius: 16px;
 }
 
-.room-deck {
-  width: 250px;
-  height: 400px;
-  text-align: center;
-  padding-top: 15px;
-  border-radius: 16px;
-}
-
-button {
-  padding: 8px 16px;
+a {
+  color: black;
   background: #682CD6;
-  border: none;
-  font-size: 20px;
+  padding: 8px 16px;
   border-radius: 8px;
-  display: block;
+  font-size: 20px;
+  font-weight: bold;
   margin-bottom: 50px;
   outline: none;
+  text-decoration: none;
 }
 
-button:hover {
+a:hover {
   box-shadow: 1px 1px 15px 2px rgb(95, 128, 155);
   animation: glowing 2s ease-in-out infinite;
 }
@@ -123,7 +108,6 @@ button:hover {
   text-align: center;
 }
 
-
 .card-inner {
   position: relative;
   background: #FFDD47;
@@ -134,13 +118,9 @@ button:hover {
   transform-style: preserve-3d;
 }
 
-.card-flip:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
 .flip-cards {
   transform: rotateY(180deg);
-}
+} 
 
 .card-front, .card-back {
   position: absolute;
