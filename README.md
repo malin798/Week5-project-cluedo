@@ -1,13 +1,11 @@
 # Cluedo - Mystery Randomizer
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Technigo assignment. The focus on this project is to practice objects and arrays and also to manipulate the DOM with JavaScript.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Follwed the instructions and added the objects and arrays first. Then added functionality to the cards and buttons. Lastly I made some design-improvements.
 
 ## View it live
 
-Not deployed yet - project not finished
+https://malins-project-clue.netlify.com
