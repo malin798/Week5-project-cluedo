@@ -267,3 +267,5 @@ document.getElementById("weaponCard").addEventListener("click", function() {
 }) 
 
 
+
+

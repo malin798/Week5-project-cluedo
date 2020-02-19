@@ -122,7 +122,6 @@ a:hover {
 
 .card-inner {
   position: relative;
-  background: #FFDD47;
   border-radius: 16px;
   width: 250px;
   height: 400px;
@@ -130,6 +129,10 @@ a:hover {
   transition: transform 0.8s;
   transform-style: preserve-3d;
         -webkit-transform-style: preserve-3d;
+}
+
+.card-front {
+  background: #FFDD47;
 }
 
 .flip-cards {
