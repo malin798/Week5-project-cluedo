@@ -2,114 +2,114 @@
 const suspects = [
 
   {suspect: "Mr Green", 
-  firstName: 'Jonathan',
-  lastName: 'Green',
+  firstName: "Jonathan",
+  lastName: "Green",
   gender: "He",
-  color: 'green',
-  description: 'He has a lot of connections',
+  color: "green",
+  description: "He has a lot of connections",
   age: 45,
-  image: 'assets/green.png',
-  occupation: 'Reverend',
+  image: "assets/green.png",
+  occupation: "Reverend",
   },
 
  {suspect: "Professor Plum", 
-  firstName: 'Peter',
-  lastName: 'Plum',
+  firstName: "Peter",
+  lastName: "Plum",
   gender: "He",
-  color: 'purple',
-  description: 'the intellectual',
+  color: "purple",
+  description: "the intellectual",
   age: 41,
-  image: 'assets/plum.png',
-  occupation: 'professor',
+  image: "assets/plum.png",
+  occupation: "professor",
   },
 
  {suspect : "Miss Scarlet", 
-  firstName: 'Josephine',
-  lastName: 'Scarlet',
+  firstName: "Josephine",
+  lastName: "Scarlet",
   gender: "She",
-  color: 'Crimson',
-  description: 'the cunning femme fatale',
+  color: "Crimson",
+  description: "the cunning femme fatale",
   age: 41,
-  image: 'assets/scarlet.png',
-  occupation: 'Actress',
+  image: "assets/scarlet.png",
+  occupation: "Actress",
   },
 
  {suspect: "Mrs Peacock",
-  firstName: 'Patricia',
-  lastName: 'Peacock',
+  firstName: "Patricia",
+  lastName: "Peacock",
   gender: "She",
-  color: 'blue',
-  description: 'the grande dame and elegant aristocrat',
+  color: "blue",
+  description: "the grande dame and elegant aristocrat",
   age: 70,
-  image: 'assets/peacock.png',
-  occupation: 'Socialite',
+  image: "assets/peacock.png",
+  occupation: "Socialite",
   },
 
  {suspect: "Colonel Mustard", 
-  firstName: 'Michael',
-  lastName: 'Mustard',
+  firstName: "Michael",
+  lastName: "Mustard",
   gender: "He",
-  color: '#e1ad01',
-  description: 'a military man, dignified and dangerous',
+  color: "#e1ad01",
+  description: "a military man, dignified and dangerous",
   age: 70,
-  image: 'assets/mustard.png',
-  occupation: 'Colonel',
+  image: "assets/mustard.png",
+  occupation: "Colonel",
   },
 
  {suspect: "Mrs White",
-  firstName: 'Blanche',
-  lastName: 'White',
+  firstName: "Blanche",
+  lastName: "White",
   gender: "She",
-  color: 'White',
-  description: 'the loyal housekeeper and a devoted confidant',
+  color: "White",
+  description: "the loyal housekeeper and a devoted confidant",
   age: 64,
-  image: 'assets/white.png',
-  occupation: 'Housekeeper',
+  image: "assets/white.png",
+  occupation: "Housekeeper",
   }
 ]
 
 const weapons = [
-{ name: 'Rope',
+{ name: "Rope",
   weight: "1 kg",
   color: "brown",
   image: "https://images.unsplash.com/photo-1518536674115-4f83c88ebf50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=621&q=80",
 },
-{ name: 'Knife',
+{ name: "Knife",
   weight: "0.4 kg",
   color: "lightgray",
   image: "https://images.unsplash.com/photo-1579232308946-36e64f99016b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
 },
-{ name: 'Candlestick',
+{ name: "Candlestick",
   weight: "3 kg",
   color: "gold",
   image: "https://images.unsplash.com/photo-1543251698-9ef753c40fbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
 },
-{ name: 'Lead Pipe',
+{ name: "Lead Pipe",
   weight: "4 kg",
   color: "grey",
   image: "https://images.unsplash.com/photo-1578319957886-2fbf15574e96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
 },
-{ name: 'Poison',
+{ name: "Poison",
   weight: "0 kg",
   color: "purple",
   image: "https://images.unsplash.com/photo-1508018151423-1b1e201c4203?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
 },
-{ name: 'Axe',
+{ name: "Axe",
   weight: "3 kg",
   color: "pink",
   image: "https://images.unsplash.com/photo-1580646417278-0305e03365ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=627&q=80",
 },
-{ name: 'Wrench',
+{ name: "Wrench",
   weight: "1 kg",
   color: "green",
   image: "https://images.unsplash.com/photo-1549899615-ef2899a8c02d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
 },
-{ name: 'Trophy',
+{ name: "Trophy",
   weight: "2kg",
   color: "plum",
   image: "https://images.unsplash.com/photo-1579913741676-b000995a823f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
 },
-{ name: 'Revolver',
+{ name: "Revolver",
   weight: "0.5 kg",
   color: "orange",
   image: "https://images.pexels.com/photos/53351/firearm-handgun-revolver-gun-53351.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
@@ -149,13 +149,13 @@ const rooms = [
 ]
 
 //Variables
-const randomSelector = array => {
+const randomSelector = array => { // randomly select an object in the array (when we invoke it and pass it an array/parameter)
  return array[Math.floor(Math.random() * array.length)]
 }
 
-let killer;
-let room;
-let weapon;
+let killer; // declaring a variable which is undefined to be able to pass in a value through the randomSelector function
+let room; // we need this outside the functions so the revealMystery function is able to detect the variables later on
+let weapon; // it is because we need it in the GLOBAL scope and not a LOCAl scope, since the LOCAL will save the value only in the function parameter
 
 //Functions
 const showKiller = () => {
@@ -166,10 +166,10 @@ const showKiller = () => {
   killerImage.classList.add("reveal-styling");
 
   document.getElementById("killerCard").classList.add("flip-cards");
-  document.getElementById('killerCardBack').style.background = killer.color;
+  document.getElementById("killerCardBack").style.background = killer.color;
   document.getElementById("killerAge").innerHTML = `Age: ${killer.age}`;
   document.getElementById("killerOccupation").innerHTML = `Occupation: ${killer.occupation}`;
-  document.getElementById('killerName').innerHTML = `${killer.firstName} ${killer.lastName}`;
+  document.getElementById("killerName").innerHTML = `${killer.firstName} ${killer.lastName}`;
 
   if (killer.suspect === "Mrs White") {
     document.getElementById("killerCardBack").classList.add("bordered");
@@ -189,7 +189,7 @@ const showWeapon = () => {
   document.getElementById("weaponCard").classList.add("flip-cards");
   document.getElementById("weaponCardBack").style.background = weapon.color;
   document.getElementById("weaponWeight").innerHTML = `Weight: ${weapon.weight}`;
-  document.getElementById('weaponName').innerHTML = `${weapon.name}`;
+  document.getElementById("weaponName").innerHTML = `${weapon.name}`;
 }
 
 const showRoom = () => {
@@ -201,10 +201,10 @@ const showRoom = () => {
   document.getElementById("roomCard").classList.add("flip-cards");
   document.getElementById("roomCardBack").style.background = room.color;
   document.getElementById("roomLocation").innerHTML = `Location: ${room.location}`;
-  document.getElementById('roomName').innerHTML = `${room.name}`;
+  document.getElementById("roomName").innerHTML = `${room.name}`;
 }
 
-const revealMystery = () => {
+const revealMystery = () => { // reveal the mystery in textarea on the webpage and add events on the button-click
   mysteryRevealText = document.getElementById("mysteryReveal");
 
   if (killer === undefined || weapon === undefined || room === undefined) {
@@ -229,18 +229,18 @@ document.getElementById("revealCrime").addEventListener("click", function() {
 })
 
 document.getElementById("killerCard").addEventListener("click", function () {
-  killer = randomSelector(suspects);
-  showKiller();
+  killer = randomSelector(suspects); // pick suspect through randomSelector function
+  showKiller(); // show the randomized suspect through showKiller function
 }) 
 
 document.getElementById("roomCard").addEventListener("click", function() {
-  room = randomSelector(rooms);
-  showRoom();
+  room = randomSelector(rooms); // pick room through randomSelector function
+  showRoom(); // show the randomized room through showRoom function
 })
 
 document.getElementById("weaponCard").addEventListener("click", function() {
-  weapon = randomSelector(weapons);
-  showWeapon();
-})
+  weapon = randomSelector(weapons); // pick weapon through randomSelector function
+  showWeapon(); // show the randomized weapon through showWeapon function
+}) 
 
 
