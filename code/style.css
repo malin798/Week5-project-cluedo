@@ -26,6 +26,18 @@ p {
   background-color: #fff;
 }
 
+img {
+  width: 80px;
+}
+
+.card-image {
+  height: 290px;
+}
+
+#killer-image {
+  height: 265px;
+}
+
 .bordered > p {
   border-bottom: solid lightgray 1px;
 }

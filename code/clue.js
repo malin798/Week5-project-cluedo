@@ -1,7 +1,8 @@
 // Objects
 const suspects = [
 
-  {suspect: "Mr Green", 
+  {
+  suspect: "Mr Green", 
   firstName: "Jonathan",
   lastName: "Green",
   gender: "He",
@@ -12,7 +13,8 @@ const suspects = [
   occupation: "Reverend",
   },
 
- {suspect: "Professor Plum", 
+ {
+  suspect: "Professor Plum", 
   firstName: "Peter",
   lastName: "Plum",
   gender: "He",
@@ -23,7 +25,8 @@ const suspects = [
   occupation: "professor",
   },
 
- {suspect : "Miss Scarlet", 
+ {
+  suspect : "Miss Scarlet", 
   firstName: "Josephine",
   lastName: "Scarlet",
   gender: "She",
@@ -34,7 +37,8 @@ const suspects = [
   occupation: "Actress",
   },
 
- {suspect: "Mrs Peacock",
+ {
+  suspect: "Mrs Peacock",
   firstName: "Patricia",
   lastName: "Peacock",
   gender: "She",
@@ -45,7 +49,8 @@ const suspects = [
   occupation: "Socialite",
   },
 
- {suspect: "Colonel Mustard", 
+ {
+  suspect: "Colonel Mustard", 
   firstName: "Michael",
   lastName: "Mustard",
   gender: "He",
@@ -56,7 +61,8 @@ const suspects = [
   occupation: "Colonel",
   },
 
- {suspect: "Mrs White",
+ {
+  suspect: "Mrs White",
   firstName: "Blanche",
   lastName: "White",
   gender: "She",
@@ -69,82 +75,99 @@ const suspects = [
 ]
 
 const weapons = [
-{ name: "Rope",
-  weight: "1 kg",
-  color: "brown",
-  image: "https://images.unsplash.com/photo-1518536674115-4f83c88ebf50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=621&q=80",
-},
-{ name: "Knife",
-  weight: "0.4 kg",
-  color: "lightgray",
-  image: "https://images.unsplash.com/photo-1579232308946-36e64f99016b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-},
-{ name: "Candlestick",
-  weight: "3 kg",
-  color: "gold",
-  image: "https://images.unsplash.com/photo-1543251698-9ef753c40fbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-},
-{ name: "Lead Pipe",
-  weight: "4 kg",
-  color: "grey",
-  image: "https://images.unsplash.com/photo-1578319957886-2fbf15574e96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-},
-{ name: "Poison",
-  weight: "0 kg",
-  color: "purple",
-  image: "https://images.unsplash.com/photo-1508018151423-1b1e201c4203?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-},
-{ name: "Axe",
-  weight: "3 kg",
-  color: "pink",
-  image: "https://images.unsplash.com/photo-1580646417278-0305e03365ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=627&q=80",
-},
-{ name: "Wrench",
-  weight: "1 kg",
-  color: "green",
-  image: "https://images.unsplash.com/photo-1549899615-ef2899a8c02d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-},
-{ name: "Trophy",
-  weight: "2kg",
-  color: "plum",
-  image: "https://images.unsplash.com/photo-1579913741676-b000995a823f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-},
-{ name: "Revolver",
-  weight: "0.5 kg",
-  color: "orange",
-  image: "https://images.pexels.com/photos/53351/firearm-handgun-revolver-gun-53351.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-}]
+  { 
+    name: "Rope",
+    weight: "1 kg",
+    color: "brown",
+    image: "https://images.unsplash.com/photo-1518536674115-4f83c88ebf50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=621&q=80",
+  },
+  { 
+    name: "Knife",
+    weight: "0.4 kg",
+    color: "lightgray",
+    image: "https://images.unsplash.com/photo-1579232308946-36e64f99016b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+  },
+  { 
+    name: "Candlestick",
+    weight: "3 kg",
+    color: "gold",
+    image: "https://images.unsplash.com/photo-1543251698-9ef753c40fbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+  },
+  { 
+    name: "Lead Pipe",
+    weight: "4 kg",
+    color: "grey",
+    image: "https://images.unsplash.com/photo-1578319957886-2fbf15574e96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+  },
+  { 
+    name: "Poison",
+    weight: "0 kg",
+    color: "purple",
+    image: "https://images.unsplash.com/photo-1508018151423-1b1e201c4203?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+  },
+  { 
+    name: "Axe",
+    
+    weight: "3 kg",
+    color: "pink",
+    image: "https://images.unsplash.com/photo-1580646417278-0305e03365ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=627&q=80",
+  },
+  { 
+    name: "Wrench",
+    weight: "1 kg",
+    color: "green",
+    image: "https://images.unsplash.com/photo-1549899615-ef2899a8c02d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+  },
+  { 
+    name: "Trophy",
+    weight: "2kg",
+    color: "plum",
+    image: "https://images.unsplash.com/photo-1579913741676-b000995a823f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+  },
+  { 
+    name: "Revolver",
+    weight: "0.5 kg",
+    color: "orange",
+    image: "https://images.pexels.com/photos/53351/firearm-handgun-revolver-gun-53351.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+  }
+]
 
 const rooms = [
-  {name: "The Dining Room",
-  location: "East Wing",
-  color: "coral",
-  image: "https://images.pexels.com/photos/2504911/pexels-photo-2504911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+  {
+    name: "The Dining Room",
+    location: "East Wing",
+    color: "coral",
+    image: "https://images.pexels.com/photos/2504911/pexels-photo-2504911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
   },
-  {name: "The Conservatory",
-  location: "West/South Wing",
-  color: "orchid",
-  image: "https://images.unsplash.com/photo-1524070960420-47602852d30f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
+  {
+    name: "The Conservatory",
+    location: "West/South Wing",
+    color: "orchid",
+    image: "https://images.unsplash.com/photo-1524070960420-47602852d30f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
   },
-  {name: "The Kitchen",
-  location: "South/East Wing",
-  color: "mediumslateblue",
-  image: "https://images.pexels.com/photos/2972365/pexels-photo-2972365.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+  {
+    name: "The Kitchen",
+    location: "South/East Wing",
+    color: "mediumslateblue",
+    image: "https://images.pexels.com/photos/2972365/pexels-photo-2972365.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
   },
-  {name: "The Study",
-  location: "North/West Wing",
-  color: "salmon",
-  image: "https://images.pexels.com/photos/1907784/pexels-photo-1907784.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+  {
+    name: "The Study",
+    location: "North/West Wing",
+    color: "salmon",
+    image: "https://images.pexels.com/photos/1907784/pexels-photo-1907784.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
   }, 
-  {name: "The Library",
-  location: "West Wing",
-  color: "sienna",
-  image: "https://images.unsplash.com/photo-1541123039768-be0b59340e7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+  {
+    name: "The Library",
+    location: "West Wing",
+    color: "sienna",
+    image: "https://images.unsplash.com/photo-1541123039768-be0b59340e7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
   }, 
-  {name: "The Billiard Room",
-  location: "West/South Wing",
-  color: "tomato",
-  image: "https://images.unsplash.com/photo-1577579242319-bbd5b7159055?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2141&q=80"
+  {
+    name: "The Billiard Room",
+    location: "West/South Wing",
+    color: "tomato",
+    image: "https://images.unsplash.com/photo-1577579242319-bbd5b7159055?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2141&q=80"
   }, 
 ]
 
